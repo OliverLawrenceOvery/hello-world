@@ -1,7 +1,2 @@
 <h1> Hello, Welcome to Simple DevOps Project !!   </h1>
-<h2> Deploying on a kubernetes using ansible for Valaxy Technologies </h2>
-<h2> Glad to see you here </h2>
-<h2> This is an edit </h2>
-<h2> Deploying using ansible </h2>
-<h2> Full e2e flow achieved </h2>
-<h2> Buildkite integration </h2>
+<h2> Deploying on a kubernetes using ansible </h2>
