@@ -2,3 +2,4 @@
 <h2> Deploying on a kubernetes using ansible </h2>
 <h3> Ansible playbook set-up to remove old images and containers </h3>
 <h3> Have made a change </h3>
+<h3> Change with ansible fully integrated </h3>
