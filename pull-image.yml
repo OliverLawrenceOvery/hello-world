@@ -1,0 +1,20 @@
+- hosts: all
+
+  tasks:
+    - name: stop running current containers
+      command: docker stop container
+      ignore_errors: yes
+
+    - name: remove stopped container
+      command: docker rm container
+      ignore_errors: yes
+
+    - name: remove docker image
+      command: docker rmi hotflame297/images
+      ignore_errors: yes
+
+    - name: pull docker image from dockerhub
+      command: docker pull hotflame297/image:latest
+
+    - name: create container from image
+      command: docker run -d --name container -p 8080:8080 hotflame297/image:latest

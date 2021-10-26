@@ -1,0 +1,16 @@
+- hosts: all
+
+  tasks:
+    - name: create docker image using war file
+      command: docker build -t image:latest
+      args:
+        chdir: /opt/docker
+
+    - name: create tag for images
+      command: docker tag image hotflame297/image
+
+    - name: push image to dockerhub
+      command: docker push hotflame297/images
+
+    - name: remove docker images from ansible servers
+      command: docker rmi image:latest hotflame297/image
